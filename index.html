@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> --
-    <!--<link rel="stylesheet" type="text/css" href="reset.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,149 +13,151 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <figure>
-                <img src="bastien.jpg" alt="Bastien HIEL">
-                <figcaption>Bastien HIEL</figcaption>
-            </figure>
-        </div>
-        <div>
-            <h1>Bastien HIEL</h1>
-            <h2>Développeur Full Stack</h2>
-        </div>
-    </header>
-    <main>
-        <div>
-            <article>
-                <h2>Contact</h2>
-                <address>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-left">
+                <figure class="header-left-figure">
+                    <img src="bastien.jpg" alt="Bastien HIEL" class="header-left-figure-img">
+                    <figcaption class="header-left-figure-figcaption">Bastien HIEL</figcaption>
+                </figure>
+            </div>
+            <div class="header-right">
+                <h1 class="header-right-title">Bastien HIEL</h1>
+                <h2 class="header-right-job">Développeur Full Stack</h2>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-left">
+                <article class="main-left-article">
+                    <h2 class="main-left-article-title">Contact</h2>
+                    <address>
                     <ul>
-                        <li>
+                        <li class="main-left-article-list-item">
                             <i class="fas fa-map-marked-alt"></i>3 rue Louis Rolland 92120 Montrouge
                         </li>
-                        <li>
+                        <li class="main-left-article-list-item">
                             <i class="fab fa-github"></i><a href="//github.com/BastienHiel">github.com/BastienHiel</a>
                         </li>
-                        <li>
+                        <li class="main-left-article-list-item">
                             <i class="fab fa-linkedin"></i><a href="//linkedin.com/in/bastienhiel/">linkedin.com/in/bastienhiel/</a>
                         </li>  
                     </ul>
                 </address>
-            </article>
-            <article>
-                <h2>Compétences</h2>
-                <ul>
-                    <li>C#</li>
-                    <li>Ruby</li>
-                    <li><i class="fab fa-js"></i>JavaScript</li>
-                    <li><i class="fab fa-react"></i>React</li>
-                    <li><i class="fab fa-html5"></i>HTML</li>
-                    <li><i class="fab fa-css3-alt"></i>CSS</li>
-                </ul>
-            </article>
-            <article>
-                <h2>Intérêts</h2>
-                <ul>
-                    <li><i class="fas fa-microchip"></i>Hardware et montage PC</li>
-                    <li><i class="fas fa-tools"></i>Réparation d'objets électroniques et réalisations de tutos</li>
-                </ul>
-            </article>
-        </div>
-        <div>
-            <article>
-                <h2>Réalisations</h2>
-                <section>
-                    <h3>Vortex Agency</h3>
-                    <p>
-                        Développeur | <time datetime="2019-11-01">Novembre 2019</time> - <time datetime="2019-12-01">Décembre 2019</time>
-                    </p>
+                </article>
+                <article class="main-left-article">
+                    <h2 class="main-left-article-title">Compétences</h2>
                     <ul>
-                        <li>
-                            Réalisation d’une plateforme de mise en relation de clients ayant des projets web, avec d’anciens élèves souhaitant se lancer en freelance
-                        </li>
-                        <li>API REST: Express.js et Sequelize</li>
-                        <li>SPA: React, Redux, React Router et Semantic UI React</li>
+                        <li class="main-left-article-list-item">C#</li>
+                        <li class="main-left-article-list-item">Ruby</li>
+                        <li class="main-left-article-list-item"><i class="fab fa-js"></i>JavaScript</li>
+                        <li class="main-left-article-list-item"><i class="fab fa-react"></i>React</li>
+                        <li class="main-left-article-list-item"><i class="fab fa-html5"></i>HTML5</li>
+                        <li class="main-left-article-list-item"><i class="fab fa-css3-alt"></i>CSS3</li>
                     </ul>
-                </section>
-                <section>
-                    <h3>Badaboum</h3>
-                    <p>
-                        Développeur | <time datetime="2019-03-01">Mars 2019</time>
-                    </p>
+                </article>
+                <article class="main-left-article">
+                    <h2 class="main-left-article-title">Intérêts</h2>
                     <ul>
-                        <li>
-                            Réalisation d’une plateforme commerciale entre particuliers centrée sur la vente de produits de puériculture
-                        </li>
-                        <li>Application web développée avec Ruby, Ruby on Rails, JS</li>
+                        <li class="main-left-article-list-item"><i class="fas fa-microchip"></i>Hardware et montage PC</li>
+                        <li class="main-left-article-list-item"><i class="fas fa-tools"></i>Réparation d'objets électroniques et réalisations de tutos</li>
                     </ul>
-                </section>
-            </article>
-            <article>
-                <h2>Expériences professionnelles</h2>
-                <section>
-                    <h3>NotaStart</h3>
-                    <p>
-                        Développeur | <time datetime="2019-04-01">Avril 2019</time> - <time datetime="2019-05-01">Mai 2019</time>
-                    </p>
-                    <ul>
-                        <li>
-                            Mission de web scraping pour récupérer les informations des 15 000 notaires de France à des fins de référencement
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Poste Immo</h3>
-                    <p>
-                        Coordinateur des Affaires Générales | <time datetime="2016-09-01">Septembre 2016</time> - <time datetime="2017-05-01">Mai 2017</time>
-                    </p>
-                    <ul>
-                        <li>Management des prestataires : sécurité, ménage et accueil</li>
-                        <li>Gestion des demandes en logistique des collaborateurs</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Hera Sécurité Privée</h3>
-                    <p>
-                        Associé | <time datetime="2012-08-01">Août 2012</time> - <time datetime="2014-04-01">Avril 2014</time>
-                    </p>
-                    <ul>
-                        <li>Management des intervenants</li>
-                        <li>Relation client</li>
-                        <li>Création des consignes d’interventions</li>
-                    </ul>
-                </section>
-            </article>
-            <article>
-                <h2>Formations</h2>
-                <section>
-                    <h3>Titre professionnel « Concepteur développeur d'application » Niveau 6</h3>
-                    <p>
-                        CRM Mulhouse | <time datetime="2021-03-05">Mai 2021</time> - <time datetime="2021-03-2022">Mai 2022</time>
-                    </p>
-                </section>
-                <section>
-                    <h3>Certification « Maîtrise de la qualité en projet web »</h3>
-                    <p>Opquast | <time datetime="2019-02-01">Février 2019</time></p>
-                </section>
-                <section>
-                    <h3>Titre professionnel « Développeur web et web mobile » Niveau 5</h3>
-                    <p>
-                        O’Clock | <time datetime="2019-07-01">Juillet 2019</time> - <time datetime="2019-12-01">Décembre 2019</time> | 700 heures
-                    </p>
-                    <p>
-                        Labellisée Grande Ecole du Numérique
-                    </p>
-                </section>
-                <section>
-                    <h3>Bootcamp Développement Web</h3>
-                    <p>
-                        The Hacking Project | <time datetime="2019-01-01">Janvier 2019</time> - <time datetime="2019-03-01">Mars 2019</time>
-                    </p>
-                </section>
-            </article>
-        </div>
-    </main>
+                </article>
+            </div>
+            <div class="main-right">
+                <article class="main-right-article">
+                    <h2 class="main-right-article-title">Réalisations</h2>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Vortex Agency</h3>
+                        <h4 class="main-right-article-section-subtitle">
+                            Développeur | <time datetime="2019-11-01">Novembre 2019</time> - <time datetime="2019-12-01">Décembre 2019</time>
+                        </h4>
+                        <ul class="main-right-article-section-list">
+                            <li class="main-right-article-section-list-item">
+                                Réalisation d’une plateforme de mise en relation de clients ayant des projets web, avec d’anciens élèves souhaitant se lancer en freelance
+                            </li>
+                            <li class="main-right-article-section-list-item">API REST: Express.js et Sequelize</li>
+                            <li class="main-right-article-section-list-item">SPA: React, Redux, React Router et Semantic UI React</li>
+                        </ul>
+                    </section>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Badaboum</h3>
+                        <h4 class="main-right-article-section-subtitle">
+                            Développeur | <time datetime="2019-03-01">Mars 2019</time>
+                        </h4>
+                        <ul class="main-right-article-section-list">
+                            <li class="main-right-article-section-list-item">
+                                Réalisation d’une plateforme commerciale entre particuliers centrée sur la vente de produits de puériculture
+                            </li>
+                            <li class="main-right-article-section-list-item">Application web développée avec Ruby, Ruby on Rails, JS</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="main-right-article">
+                    <h2 class="main-right-article-title">Expériences professionnelles</h2>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">NotaStart</h3>
+                        <h4 class="main-right-article-section-subtitle">
+                            Développeur | <time datetime="2019-04-01">Avril 2019</time> - <time datetime="2019-05-01">Mai 2019</time>
+                        </h4>
+                        <ul class="main-right-article-section-list">
+                            <li class="main-right-article-section-list-item">
+                                Mission de web scraping pour récupérer les informations des 15 000 notaires de France à des fins de référencement
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Poste Immo</h3>
+                        <h4 class="main-right-article-section-subtitle">
+                            Coordinateur des Affaires Générales | <time datetime="2016-09-01">Septembre 2016</time> - <time datetime="2017-05-01">Mai 2017</time>
+                        </h4>
+                        <ul class="main-right-article-section-list">
+                            <li class="main-right-article-section-list-item">Management des prestataires : sécurité, ménage et accueil</li>
+                            <li class="main-right-article-section-list-item">Gestion des demandes en logistique des collaborateurs</li>
+                        </ul>
+                    </section>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Hera Sécurité Privée</h3>
+                        <h4 class="main-right-article-section-subtitle">
+                            Associé | <time datetime="2012-08-01">Août 2012</time> - <time datetime="2014-04-01">Avril 2014</time>
+                        </h4>
+                        <ul class="main-right-article-section-list">
+                            <li class="main-right-article-section-list-item">Management des intervenants</li>
+                            <li class="main-right-article-section-list-item">Relation client</li>
+                            <li class="main-right-article-section-list-item">Création des consignes d’interventions</li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="main-right-article">
+                    <h2 class="main-right-article-title">Formations</h2>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Titre professionnel Concepteur développeur d'application Niveau 6</h3>
+                        <p class="main-right-article-section-paragraph">
+                            CRM Mulhouse | <time datetime="2021-03-05">Mai 2021</time> - <time datetime="2021-03-2022">Mai 2022</time>
+                        </p>
+                    </section>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Certification Maîtrise de la qualité en projet web</h3>
+                        <p class="main-right-article-section-paragraph">Opquast | <time datetime="2019-02-01">Février 2019</time></p>
+                    </section>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Titre professionnel Développeur web et web mobile Niveau 5</h3>
+                        <p class="main-right-article-section-paragraph">
+                            O’Clock | <time datetime="2019-07-01">Juillet 2019</time> - <time datetime="2019-12-01">Décembre 2019</time> | 700 heures
+                        </p>
+                        <p class="main-right-article-section-paragraph">
+                            Labellisée Grande Ecole du Numérique
+                        </p>
+                    </section>
+                    <section class="main-right-article-section">
+                        <h3 class="main-right-article-section-title">Bootcamp Développement Web</h3>
+                        <p class="main-right-article-section-paragraph">
+                            The Hacking Project | <time datetime="2019-01-01">Janvier 2019</time> - <time datetime="2019-03-01">Mars 2019</time>
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>

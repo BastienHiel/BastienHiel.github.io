@@ -1,3 +1,145 @@
-h1 {
-    color: deeppink;
+:root {
+    --primary-color: #335384;
+    --secondary-color: #5caad4;
+    --tertiary-color: white;
+    --quaternary-color: #444440;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.wrapper {
+    max-width: 900px;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: var(--primary-color);
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    margin: 2em;
+}
+
+.header-left-figure-img {
+    border-radius: 50%;
+    margin: 2em;
+}
+
+.header-left-figure-figcaption {
+    opacity: 0;
+}
+
+.header-right-title {
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.header-right-job {
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.main-left {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    flex-grow: 1;
+}
+
+.main-right {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    color: var(--quaternary-color);
+}
+
+.main-left-article-title {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.main-left-article-list-item {
+    margin-top: 0.3em;
+}
+
+.fas,
+.fab {
+    margin-right: 0.7em;
+}
+
+.main-right-article-title {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.main-right-article-section {
+    margin-top: 1em;
+}
+
+.main-right-article-section-title {
+    font-size: 0.9em;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.main-right-article-section-subtitle {
+    font-size: 0.6em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.main-right-article-section-paragraph {
+    font-size: 0.6em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.main-right-article-section-list-item {
+    margin-left: 1em;
+    list-style-type: disc;
 }
