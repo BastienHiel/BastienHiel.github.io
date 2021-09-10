@@ -3,6 +3,7 @@
     --secondary-color: #5caad4;
     --tertiary-color: white;
     --quaternary-color: #444440;
+    --quinary-color: #B5BCB8;
 }
 
 body {
@@ -12,13 +13,25 @@ body {
     justify-content: center;
 }
 
-a:link {
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
     color: var(--tertiary-color);
 }
 
 .wrapper {
     max-width: 900px;
+}
+
+@media only screen and (min-width: 900px) {
+    .wrapper {
+        margin: 1em;
+        box-shadow: 0px 5px 10px 5px var(--quinary-color);
+    }
 }
 
 .header {
@@ -67,46 +80,13 @@ a:link {
 }
 
 .main {
+    margin: 2em;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: stretch;
-}
-
-.main-left {
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    flex-grow: 1;
-}
-
-.main-right {
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 3;
+    flex-flow: column wrap;
     color: var(--quaternary-color);
 }
 
-.main-left-article-title {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    font-size: 1.2em;
-    font-weight: 550;
-    text-transform: uppercase;
-}
-
-.main-left-article-list-item {
-    margin-top: 0.3em;
-}
-
-.fas,
-.fab {
-    margin-right: 0.7em;
-}
-
-.main-right-article-title {
+.main-article-title {
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-size: 1.2em;
@@ -115,31 +95,64 @@ a:link {
     color: var(--secondary-color);
 }
 
-.main-right-article-section {
-    margin-top: 1em;
+.main-article-section {
+    margin-top: 0.5em;
 }
 
-.main-right-article-section-title {
+.main-article-section-title {
     font-size: 0.9em;
     font-weight: 550;
     text-transform: uppercase;
 }
 
-.main-right-article-section-subtitle {
+.main-article-section-subtitle {
     font-size: 0.6em;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0.5em;
 }
 
-.main-right-article-section-paragraph {
-    font-size: 0.6em;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 0.5em;
-}
-
-.main-right-article-section-list-item {
+.main-article-section-list-item {
     margin-left: 1em;
     list-style-type: disc;
+}
+
+.main-article-section-paragraph {
+    font-size: 0.6em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 2em;
+}
+
+.footer-article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+}
+
+.footer-article-title {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.footer-article-address-list-item,
+.footer-article-list-item {
+    margin-top: 0.5em;
+}
+
+.fas,
+.fab {
+    margin-right: 0.7em;
 }
